@@ -1,1 +1,3 @@
-## Replication Package
+## Pacote de Replicação
+
+Neste repositório, você encontrará todos os arquivos necessários para replicação do estudo...
