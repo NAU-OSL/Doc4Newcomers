@@ -1,0 +1,70 @@
+{
+    "BW \u2013 Build local workspace": {
+        "f1-score": 0.5176470588235293,
+        "precision": 0.5641025641025641,
+        "recall": 0.4782608695652174,
+        "support": 138
+    },
+    "CF \u2013 Contribution flow": {
+        "f1-score": 0.4636871508379889,
+        "precision": 0.5496688741721855,
+        "recall": 0.40096618357487923,
+        "support": 207
+    },
+    "CT \u2013 Choose a task": {
+        "f1-score": 0.28571428571428575,
+        "precision": 0.3142857142857143,
+        "recall": 0.2619047619047619,
+        "support": 42
+    },
+    "DC \u2013 Deal with the code": {
+        "f1-score": 0.29239766081871343,
+        "precision": 0.46296296296296297,
+        "recall": 0.21367521367521367,
+        "support": 117
+    },
+    "FM \u2013 Find a mentor": {
+        "f1-score": 0.11764705882352941,
+        "precision": 0.3333333333333333,
+        "recall": 0.07142857142857142,
+        "support": 14
+    },
+    "SC \u2013 Submit the changes": {
+        "f1-score": 0.30434782608695654,
+        "precision": 0.3620689655172414,
+        "recall": 0.2625,
+        "support": 80
+    },
+    "TC \u2013 Talk to the community": {
+        "f1-score": 0.6268656716417911,
+        "precision": 0.6086956521739131,
+        "recall": 0.6461538461538462,
+        "support": 65
+    },
+    "classifier_name": "LinearSVC",
+    "macro avg": {
+        "f1-score": 0.37261524467811347,
+        "precision": 0.45644543807827354,
+        "recall": 0.33355563518607,
+        "support": 663
+    },
+    "micro avg": {
+        "f1-score": 0.4330434782608696,
+        "precision": 0.5112936344969199,
+        "recall": 0.3755656108597285,
+        "support": 663
+    },
+    "samples avg": {
+        "f1-score": 0.21753594115680375,
+        "precision": 0.2278502173186225,
+        "recall": 0.22097244113292258,
+        "support": 663
+    },
+    "strategy": "binary-relevance",
+    "weighted avg": {
+        "f1-score": 0.42288116775882734,
+        "precision": 0.5010432560570335,
+        "recall": 0.3755656108597285,
+        "support": 663
+    }
+}

@@ -1,0 +1,21 @@
+# Author: group_8 
+# CF, CT, FM, TC, BW, DC, SC
+BW
+NONE
+DC
+DC
+BW,DC
+DC
+TC
+TC
+TC
+TC
+BW,DC
+DC
+DC
+NONE
+BW
+TC
+CT
+CT
+CF,SC

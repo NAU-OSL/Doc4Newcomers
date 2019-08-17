@@ -1,0 +1,19 @@
+# Author: student_i 
+# CF, CT, FM, TC, BW, DC, SC
+NONE
+NONE
+NONE
+CF
+FM
+NONE
+NONE
+CF,CT,TC
+CF,CT
+SC
+DC,SC
+CF,TC,SC
+CF,SC
+CF,CT
+TC
+NONE
+CF

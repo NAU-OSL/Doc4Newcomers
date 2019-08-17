@@ -1,0 +1,70 @@
+{
+    "BW \u2013 Build local workspace": {
+        "f1-score": 0.5291828793774319,
+        "precision": 0.5714285714285714,
+        "recall": 0.4927536231884058,
+        "support": 138
+    },
+    "CF \u2013 Contribution flow": {
+        "f1-score": 0.47645429362880887,
+        "precision": 0.5584415584415584,
+        "recall": 0.41545893719806765,
+        "support": 207
+    },
+    "CT \u2013 Choose a task": {
+        "f1-score": 0.26666666666666666,
+        "precision": 0.30303030303030304,
+        "recall": 0.23809523809523808,
+        "support": 42
+    },
+    "DC \u2013 Deal with the code": {
+        "f1-score": 0.31213872832369943,
+        "precision": 0.48214285714285715,
+        "recall": 0.23076923076923078,
+        "support": 117
+    },
+    "FM \u2013 Find a mentor": {
+        "f1-score": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "support": 14
+    },
+    "SC \u2013 Submit the changes": {
+        "f1-score": 0.3088235294117648,
+        "precision": 0.375,
+        "recall": 0.2625,
+        "support": 80
+    },
+    "TC \u2013 Talk to the community": {
+        "f1-score": 0.6268656716417911,
+        "precision": 0.6086956521739131,
+        "recall": 0.6461538461538462,
+        "support": 65
+    },
+    "classifier_name": "SGDClassifier",
+    "macro avg": {
+        "f1-score": 0.36001882415002334,
+        "precision": 0.4141055631738862,
+        "recall": 0.3265329822006841,
+        "support": 663
+    },
+    "micro avg": {
+        "f1-score": 0.44135534317984365,
+        "precision": 0.5204918032786885,
+        "recall": 0.38310708898944196,
+        "support": 663
+    },
+    "samples avg": {
+        "f1-score": 0.22321965897693077,
+        "precision": 0.23537278502173184,
+        "recall": 0.22498447724124757,
+        "support": 663
+    },
+    "strategy": "binary-relevance",
+    "weighted avg": {
+        "f1-score": 0.4296012946587925,
+        "precision": 0.5025003768609906,
+        "recall": 0.38310708898944196,
+        "support": 663
+    }
+}

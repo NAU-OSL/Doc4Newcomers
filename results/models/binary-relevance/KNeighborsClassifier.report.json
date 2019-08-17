@@ -1,0 +1,70 @@
+{
+    "BW \u2013 Build local workspace": {
+        "f1-score": 0.5,
+        "precision": 0.5754716981132075,
+        "recall": 0.4420289855072464,
+        "support": 138
+    },
+    "CF \u2013 Contribution flow": {
+        "f1-score": 0.45197740112994345,
+        "precision": 0.54421768707483,
+        "recall": 0.3864734299516908,
+        "support": 207
+    },
+    "CT \u2013 Choose a task": {
+        "f1-score": 0.5,
+        "precision": 0.7272727272727273,
+        "recall": 0.38095238095238093,
+        "support": 42
+    },
+    "DC \u2013 Deal with the code": {
+        "f1-score": 0.303030303030303,
+        "precision": 0.5208333333333334,
+        "recall": 0.21367521367521367,
+        "support": 117
+    },
+    "FM \u2013 Find a mentor": {
+        "f1-score": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "support": 14
+    },
+    "SC \u2013 Submit the changes": {
+        "f1-score": 0.3157894736842105,
+        "precision": 0.39622641509433965,
+        "recall": 0.2625,
+        "support": 80
+    },
+    "TC \u2013 Talk to the community": {
+        "f1-score": 0.562962962962963,
+        "precision": 0.5428571428571428,
+        "recall": 0.5846153846153846,
+        "support": 65
+    },
+    "classifier_name": "KNeighborsClassifier",
+    "macro avg": {
+        "f1-score": 0.37625144868677424,
+        "precision": 0.4724112862493687,
+        "recall": 0.32432077067170234,
+        "support": 663
+    },
+    "micro avg": {
+        "f1-score": 0.4346257889990983,
+        "precision": 0.5403587443946188,
+        "recall": 0.363499245852187,
+        "support": 663
+    },
+    "samples avg": {
+        "f1-score": 0.21325643597459046,
+        "precision": 0.2243396857238382,
+        "recall": 0.21361704160099346,
+        "support": 663
+    },
+    "strategy": "binary-relevance",
+    "weighted avg": {
+        "f1-score": 0.42363441625305154,
+        "precision": 0.5287103131264381,
+        "recall": 0.363499245852187,
+        "support": 663
+    }
+}

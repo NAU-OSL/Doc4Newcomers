@@ -1,0 +1,70 @@
+{
+    "BW \u2013 Build local workspace": {
+        "f1-score": 0.48535564853556484,
+        "precision": 0.5742574257425742,
+        "recall": 0.42028985507246375,
+        "support": 138
+    },
+    "CF \u2013 Contribution flow": {
+        "f1-score": 0.4469914040114613,
+        "precision": 0.5492957746478874,
+        "recall": 0.37681159420289856,
+        "support": 207
+    },
+    "CT \u2013 Choose a task": {
+        "f1-score": 0.4776119402985074,
+        "precision": 0.64,
+        "recall": 0.38095238095238093,
+        "support": 42
+    },
+    "DC \u2013 Deal with the code": {
+        "f1-score": 0.311377245508982,
+        "precision": 0.52,
+        "recall": 0.2222222222222222,
+        "support": 117
+    },
+    "FM \u2013 Find a mentor": {
+        "f1-score": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "support": 14
+    },
+    "SC \u2013 Submit the changes": {
+        "f1-score": 0.2945736434108527,
+        "precision": 0.3877551020408163,
+        "recall": 0.2375,
+        "support": 80
+    },
+    "TC \u2013 Talk to the community": {
+        "f1-score": 0.562962962962963,
+        "precision": 0.5428571428571428,
+        "recall": 0.5846153846153846,
+        "support": 65
+    },
+    "classifier_name": "KNeighborsClassifier",
+    "macro avg": {
+        "f1-score": 0.36841040638976164,
+        "precision": 0.4591664921840601,
+        "recall": 0.31748449100933573,
+        "support": 663
+    },
+    "micro avg": {
+        "f1-score": 0.4272727272727273,
+        "precision": 0.5377574370709383,
+        "recall": 0.35444947209653094,
+        "support": 663
+    },
+    "samples avg": {
+        "f1-score": 0.20860916081578068,
+        "precision": 0.2218321631561351,
+        "recall": 0.2072646510961456,
+        "support": 663
+    },
+    "strategy": "one-vs-the-rest",
+    "weighted avg": {
+        "f1-score": 0.4165243188700294,
+        "precision": 0.5233452074714442,
+        "recall": 0.35444947209653094,
+        "support": 663
+    }
+}

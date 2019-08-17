@@ -1,0 +1,70 @@
+{
+    "BW \u2013 Build local workspace": {
+        "f1-score": 0.48249027237354086,
+        "precision": 0.5210084033613446,
+        "recall": 0.4492753623188406,
+        "support": 138
+    },
+    "CF \u2013 Contribution flow": {
+        "f1-score": 0.46684350132625996,
+        "precision": 0.5176470588235295,
+        "recall": 0.4251207729468599,
+        "support": 207
+    },
+    "CT \u2013 Choose a task": {
+        "f1-score": 0.3373493975903615,
+        "precision": 0.34146341463414637,
+        "recall": 0.3333333333333333,
+        "support": 42
+    },
+    "DC \u2013 Deal with the code": {
+        "f1-score": 0.28125,
+        "precision": 0.36,
+        "recall": 0.23076923076923078,
+        "support": 117
+    },
+    "FM \u2013 Find a mentor": {
+        "f1-score": 0.2608695652173913,
+        "precision": 0.3333333333333333,
+        "recall": 0.21428571428571427,
+        "support": 14
+    },
+    "SC \u2013 Submit the changes": {
+        "f1-score": 0.3067484662576687,
+        "precision": 0.30120481927710846,
+        "recall": 0.3125,
+        "support": 80
+    },
+    "TC \u2013 Talk to the community": {
+        "f1-score": 0.5985401459854014,
+        "precision": 0.5694444444444444,
+        "recall": 0.6307692307692307,
+        "support": 65
+    },
+    "classifier_name": "RandomForestClassifier",
+    "macro avg": {
+        "f1-score": 0.39058447839294624,
+        "precision": 0.42058592483912954,
+        "recall": 0.37086480634617275,
+        "support": 663
+    },
+    "micro avg": {
+        "f1-score": 0.42207792207792205,
+        "precision": 0.45694200351493847,
+        "recall": 0.39215686274509803,
+        "support": 663
+    },
+    "samples avg": {
+        "f1-score": 0.21882313607489134,
+        "precision": 0.2252591106653293,
+        "recall": 0.2295218990304246,
+        "support": 663
+    },
+    "strategy": "label-powerset",
+    "weighted avg": {
+        "f1-score": 0.41838966480179146,
+        "precision": 0.4544351513615301,
+        "recall": 0.39215686274509803,
+        "support": 663
+    }
+}

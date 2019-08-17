@@ -1,0 +1,70 @@
+{
+    "BW \u2013 Build local workspace": {
+        "f1-score": 0.5019920318725098,
+        "precision": 0.5575221238938053,
+        "recall": 0.45652173913043476,
+        "support": 138
+    },
+    "CF \u2013 Contribution flow": {
+        "f1-score": 0.40243902439024387,
+        "precision": 0.5454545454545454,
+        "recall": 0.3188405797101449,
+        "support": 207
+    },
+    "CT \u2013 Choose a task": {
+        "f1-score": 0.41935483870967744,
+        "precision": 0.65,
+        "recall": 0.30952380952380953,
+        "support": 42
+    },
+    "DC \u2013 Deal with the code": {
+        "f1-score": 0.3352601156069364,
+        "precision": 0.5178571428571429,
+        "recall": 0.24786324786324787,
+        "support": 117
+    },
+    "FM \u2013 Find a mentor": {
+        "f1-score": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "support": 14
+    },
+    "SC \u2013 Submit the changes": {
+        "f1-score": 0.30434782608695654,
+        "precision": 0.3620689655172414,
+        "recall": 0.2625,
+        "support": 80
+    },
+    "TC \u2013 Talk to the community": {
+        "f1-score": 0.5454545454545454,
+        "precision": 0.5373134328358209,
+        "recall": 0.5538461538461539,
+        "support": 65
+    },
+    "classifier_name": "KNeighborsClassifier",
+    "macro avg": {
+        "f1-score": 0.3584069117315528,
+        "precision": 0.45288803007979367,
+        "recall": 0.30701364715339874,
+        "support": 663
+    },
+    "micro avg": {
+        "f1-score": 0.41530054644808745,
+        "precision": 0.5241379310344828,
+        "recall": 0.3438914027149321,
+        "support": 663
+    },
+    "samples avg": {
+        "f1-score": 0.2026149878206047,
+        "precision": 0.21247074557004345,
+        "recall": 0.20224960596073935,
+        "support": 663
+    },
+    "strategy": "label-powerset",
+    "weighted avg": {
+        "f1-score": 0.40606408256486703,
+        "precision": 0.515274992603966,
+        "recall": 0.3438914027149321,
+        "support": 663
+    }
+}

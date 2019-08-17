@@ -1,0 +1,70 @@
+{
+    "BW \u2013 Build local workspace": {
+        "f1-score": 0.5303030303030303,
+        "precision": 0.5555555555555556,
+        "recall": 0.5072463768115942,
+        "support": 138
+    },
+    "CF \u2013 Contribution flow": {
+        "f1-score": 0.4793388429752066,
+        "precision": 0.5576923076923077,
+        "recall": 0.42028985507246375,
+        "support": 207
+    },
+    "CT \u2013 Choose a task": {
+        "f1-score": 0.27027027027027023,
+        "precision": 0.3125,
+        "recall": 0.23809523809523808,
+        "support": 42
+    },
+    "DC \u2013 Deal with the code": {
+        "f1-score": 0.28571428571428564,
+        "precision": 0.47058823529411764,
+        "recall": 0.20512820512820512,
+        "support": 117
+    },
+    "FM \u2013 Find a mentor": {
+        "f1-score": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "support": 14
+    },
+    "SC \u2013 Submit the changes": {
+        "f1-score": 0.30656934306569344,
+        "precision": 0.3684210526315789,
+        "recall": 0.2625,
+        "support": 80
+    },
+    "TC \u2013 Talk to the community": {
+        "f1-score": 0.6268656716417911,
+        "precision": 0.6086956521739131,
+        "recall": 0.6461538461538462,
+        "support": 65
+    },
+    "classifier_name": "SGDClassifier",
+    "macro avg": {
+        "f1-score": 0.3570087777100396,
+        "precision": 0.41049325762106753,
+        "recall": 0.3256305030373354,
+        "support": 663
+    },
+    "micro avg": {
+        "f1-score": 0.43982683982683984,
+        "precision": 0.516260162601626,
+        "recall": 0.38310708898944196,
+        "support": 663
+    },
+    "samples avg": {
+        "f1-score": 0.22338682714811098,
+        "precision": 0.23520561685055164,
+        "recall": 0.22548598175478818,
+        "support": 663
+    },
+    "strategy": "classifier-chains",
+    "weighted avg": {
+        "f1-score": 0.4260282014473312,
+        "precision": 0.49672956182536465,
+        "recall": 0.38310708898944196,
+        "support": 663
+    }
+}

@@ -1,0 +1,33 @@
+# Author: group_h 
+# CF, CT, FM, TC, BW, DC, SC
+SC
+NONE
+NONE
+NONE
+NONE
+BW
+BW
+NONE
+BW
+DC
+CF,CT,SC
+BW
+BW
+BW
+BW
+BW
+TC
+CF,SC
+FM
+FM
+NONE
+NONE
+CF
+TC
+SC
+SC
+DC
+DC,SC
+CF
+CT
+TC

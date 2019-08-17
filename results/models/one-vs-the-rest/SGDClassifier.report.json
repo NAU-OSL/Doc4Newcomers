@@ -1,0 +1,70 @@
+{
+    "BW \u2013 Build local workspace": {
+        "f1-score": 0.5287356321839081,
+        "precision": 0.5609756097560976,
+        "recall": 0.5,
+        "support": 138
+    },
+    "CF \u2013 Contribution flow": {
+        "f1-score": 0.4793388429752066,
+        "precision": 0.5576923076923077,
+        "recall": 0.42028985507246375,
+        "support": 207
+    },
+    "CT \u2013 Choose a task": {
+        "f1-score": 0.26666666666666666,
+        "precision": 0.30303030303030304,
+        "recall": 0.23809523809523808,
+        "support": 42
+    },
+    "DC \u2013 Deal with the code": {
+        "f1-score": 0.3040935672514619,
+        "precision": 0.48148148148148145,
+        "recall": 0.2222222222222222,
+        "support": 117
+    },
+    "FM \u2013 Find a mentor": {
+        "f1-score": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "support": 14
+    },
+    "SC \u2013 Submit the changes": {
+        "f1-score": 0.3088235294117648,
+        "precision": 0.375,
+        "recall": 0.2625,
+        "support": 80
+    },
+    "TC \u2013 Talk to the community": {
+        "f1-score": 0.6268656716417911,
+        "precision": 0.6086956521739131,
+        "recall": 0.6461538461538462,
+        "support": 65
+    },
+    "classifier_name": "SGDClassifier",
+    "macro avg": {
+        "f1-score": 0.359217701447257,
+        "precision": 0.4124107648763004,
+        "recall": 0.32703730879196724,
+        "support": 663
+    },
+    "micro avg": {
+        "f1-score": 0.4415584415584416,
+        "precision": 0.5182926829268293,
+        "recall": 0.38461538461538464,
+        "support": 663
+    },
+    "samples avg": {
+        "f1-score": 0.22455700434637244,
+        "precision": 0.23737880307589435,
+        "recall": 0.22598748626832882,
+        "support": 663
+    },
+    "strategy": "one-vs-the-rest",
+    "weighted avg": {
+        "f1-score": 0.4289890740804309,
+        "precision": 0.49997400496313654,
+        "recall": 0.38461538461538464,
+        "support": 663
+    }
+}

@@ -1,0 +1,19 @@
+Fuzzy Kappa v. 0.5f
+(c) Andrei Kirilenko andrei@kirilenko.org
+Crisp Kappa (based on the first choice of the raters): 
+     Observed agreement =  0.588235294118
+     Expected agreement =  0.349480968858
+     Kappa  =  0.367021276596
+     Bootstrap CI at 90: ( 0.116797065114 , 0.596818879532 )
+     Bootstrap CI at 95: ( 0.0717041067897 , 0.641911837856 )
+     Bootstrap CI at 99: ( -0.0184818098586 , 0.732097754505 )
+
+Fuzzy Kappa: 
+     Observed agreement =  0.529411764706
+     Expected agreement =  0.265282583622
+     Kappa  =  0.359497645212
+     Bootstrap CI at 90: ( 0.141447109378 , 0.55671733021 )
+     Bootstrap CI at 95: ( 0.102436876512 , 0.595727563077 )
+     Bootstrap CI at 99: ( 0.0244164107798 , 0.673748028809 )
+
+Press any key

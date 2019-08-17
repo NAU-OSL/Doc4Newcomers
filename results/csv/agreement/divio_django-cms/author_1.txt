@@ -1,0 +1,27 @@
+# Author: group_m 
+# CF, CT, FM, TC, BW, DC, SC
+NONE
+NONE
+NONE
+CT
+NONE
+NONE
+NONE
+NONE
+NONE
+NONE
+BW
+TC
+TC
+NONE
+NONE
+CF
+CF
+CF
+CF,CT
+CF,DC
+CF
+CF
+CF
+CF,TC
+CF

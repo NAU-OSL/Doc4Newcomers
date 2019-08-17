@@ -1,0 +1,70 @@
+{
+    "BW \u2013 Build local workspace": {
+        "f1-score": 0.43902439024390244,
+        "precision": 0.6716417910447762,
+        "recall": 0.32608695652173914,
+        "support": 138
+    },
+    "CF \u2013 Contribution flow": {
+        "f1-score": 0.33571428571428574,
+        "precision": 0.6438356164383562,
+        "recall": 0.22705314009661837,
+        "support": 207
+    },
+    "CT \u2013 Choose a task": {
+        "f1-score": 0.20833333333333331,
+        "precision": 0.8333333333333334,
+        "recall": 0.11904761904761904,
+        "support": 42
+    },
+    "DC \u2013 Deal with the code": {
+        "f1-score": 0.14285714285714288,
+        "precision": 1.0,
+        "recall": 0.07692307692307693,
+        "support": 117
+    },
+    "FM \u2013 Find a mentor": {
+        "f1-score": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "support": 14
+    },
+    "SC \u2013 Submit the changes": {
+        "f1-score": 0.1978021978021978,
+        "precision": 0.8181818181818182,
+        "recall": 0.1125,
+        "support": 80
+    },
+    "TC \u2013 Talk to the community": {
+        "f1-score": 0.4897959183673469,
+        "precision": 0.7272727272727273,
+        "recall": 0.36923076923076925,
+        "support": 65
+    },
+    "classifier_name": "LogisticRegression",
+    "macro avg": {
+        "f1-score": 0.2590753240454584,
+        "precision": 0.6706093266101444,
+        "recall": 0.17583450883140325,
+        "support": 663
+    },
+    "micro avg": {
+        "f1-score": 0.3225058004640371,
+        "precision": 0.6984924623115578,
+        "recall": 0.2096530920060332,
+        "support": 663
+    },
+    "samples avg": {
+        "f1-score": 0.12788365095285856,
+        "precision": 0.13390170511534605,
+        "recall": 0.12637913741223672,
+        "support": 663
+    },
+    "strategy": "label-powerset",
+    "weighted avg": {
+        "f1-score": 0.30649082839947933,
+        "precision": 0.7401022812883733,
+        "recall": 0.2096530920060332,
+        "support": 663
+    }
+}
