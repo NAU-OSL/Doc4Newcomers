@@ -116,7 +116,7 @@ def classify(classifiers, strategies, report, deploy, results_dir, analysis_dir)
 
 if __name__ == '__main__':
     repository_dir = os.path.dirname(os.path.dirname(os.getcwd()))
-    analysis_dir = os.path.join(repository_dir, 'data', 'analysis')
+    analysis_dir = os.path.join(repository_dir, 'data', 'reviews')
     results_dir = os.path.join(repository_dir, 'results')
 
     kwargs = {

@@ -1,4 +1,3 @@
-# WITHOUT README OR CONTRIBUTING FILES:
 alexreisner/geocoder
 dropwizard/metrics
 Eugeny/ajenti
@@ -34,15 +33,7 @@ ThinkU-pLLC/ThinkUp
 bundler/bundler
 haml/haml
 springprojects/spring-framework
-
-# DEPRECATED:
-sass/sass
-celluloid/celluloid
-thoughtbot/paperclip
-
-# CONTRIBUTING WITH # LINES <= 1:
-bup/bup
-netty/netty
-gruntjs/grunt
-itseez/opencv
-clojure/clojure
+WordPress/WordPress
+Seldaek/monolog
+v8/v8
+webscalesql/webscalesql-5.6

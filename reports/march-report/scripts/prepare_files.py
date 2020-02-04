@@ -4,55 +4,48 @@
 __author__ =  'Felipe Fronchetti'
 __contact__ = 'fronchetti@usp.br'
 
-import csv
-import os 
-import re
-import statistics
-import xlsxwriter
-import random
-import telescope.collector as GitHub
-import telescope.search as GitHubSearch
-import telescope.repository as GitHubRepository
+import os
+import github_scraper.scraper as scraper
+import github_scraper.project_collector as project_collector_api
 
 raw_files_folder = '../raw_files'
 spreadsheet_folder = '../spreadsheets'
 
-class SpreadsheetCreator:
-    def __init__(self, organization, name, repository):
-        self.organization, self.name, self.repository = organization, name, repository
-        self.folder = raw_files_folder + '/' + self.name + ' (' + self.organization + ')'
-        self.readme = None
-        self.contributing = None
-        self.ignore = []
+class DocumentationDownloader:
+    def __init__(self, project_org, project_name, collector):
+        self.project_org, self.project_name, self.project_collector = project_org, project_name, project_collector
+        self.project_folder = os.path.join(raw_files_folder, self.project_org + '#' + self.project_name)
+        excluded = []
 
-        if os.path.isfile(raw_files_folder + '/ignore.txt'):
-            with open(raw_files_folder + '/ignore.txt', 'r') as file:
-                self.ignore = file.read().splitlines()
+        if os.path.isfile(os.path.join(raw_files_folder, 'excluded_projects.txt')):
+            with open(os.path.join(raw_files_folder, 'excluded_projects.txt'), 'r') excluded_file:
+                excluded = excluded_file.read().splitlines()
 
-        if self.name not in self.ignore:
+        if self.project_name not in self.exclude:
             self.__download_files()
 
     def __download_files(self):
-        self.readme, self.readme_filename = repository.readme()
-        self.contributing, self.contributing_filename = repository.contributing()
+        readme, readme_filename = project_collector.readme()
+        contributing, contributing_filename = project_collector.contributing()
 
-        if self.readme and self.contributing:
-            if not os.path.isdir(self.folder):
-                os.makedirs(self.folder)
+        if readme and contributing:
+            if not os.path.isdir(self.project_folder):
+                os.makedirs(self.project_folder)
 
-            with open(self.folder + '/' + self.readme_filename, 'wb') as file:
-                file.write(str.encode(self.readme, encoding='utf-8'))
+            with open(os.path.join(self.project_folder, readme_filename), 'wb') as output_file:
+                output_file.write(str.encode(readme, encoding='utf-8'))
 
-            with open(self.folder + '/' + self.contributing_filename, 'wb') as file:
-                file.write(str.encode(self.contributing, encoding='utf-8'))
+            with open(os.path.join(self.project_folder, contributing_filename), 'wb') as output_file:
+                output_file.write(str.encode(contributing, encoding='utf-8'))
         else:
-            with open(raw_files_folder + '/ignore.txt', 'a') as file:
-                file.write(self.organization + '/' + self.name + '\n')
+            with open(os.path.join(raw_files_folder, 'excluded_projects.txt'), 'a') as output_file:
+                output_file.write(self.project_org + '/' + self.project_name + '\n')
 
 if __name__ == '__main__':
-    api_client_id = str('4161a8257efaea420c94')
-    api_client_secret = str('d814ec48927a6bd62c55c058cd028a949e5362d4')
-    api_collector = GitHub.Collector(api_client_id, api_client_secret)
+    api_client_id = '4161a8257efaea420c94'
+    api_client_secret = 'd814ec48927a6bd62c55c058cd028a949e5362d4'
+    api_scraper = scraper.Create(api_client_id, api_client_secret)
+
     projects = {
         1: [('alexreisner', 'geocoder'), ('atom', 'atom-shell'), ('bjorn', 'tiled'), ('bumptech', 'glide'), ('celery', 'celery'), ('celluloid', 'celluloid'),
             ('dropwizard', 'dropwizard'), ('dropwizard', 'metrics'), ('erikhuda', 'thor'), ('Eugeny', 'ajenti'), ('getsen-try', 'sentry'), ('github', 'android'),
@@ -71,7 +64,16 @@ if __name__ == '__main__':
             ('sparklemo-tion', 'nokogiri'), ('strongloop', 'express'), ('thinkaurelius', 'titan'), ('ThinkU-pLLC', 'ThinkUp'), ('thumbor', 'thumbor'),
             ('xetorthio', 'jedis')],
         3: [('bbatsov', 'rubocop'), ('bitcoin', 'bitcoin'), ('bundler', 'bundler'), ('divio', 'django-cms'), ('haml', 'haml'), ('jnicklas', 'capybara'),
-            ('mozilla', 'pdf.js'), ('rg3', 'youtube-dl'), ('mrdoob', 'three.js'), ('springprojects', 'spring-framework'), ('yiisoft', 'yii2')]
+            ('mozilla', 'pdf.js'), ('rg3', 'youtube-dl'), ('mrdoob', 'three.js'), ('springprojects', 'spring-framework'), ('yiisoft', 'yii2')],
+        4: [('boto', 'boto'), ('BVLC', 'caffe'), ('codemirror', 'CodeMirror'), ('gradle', 'gradle'), ('ipython', 'ipython'), ('jekyll', 'jekyll'), ('jquery', 'jquery')],
+        5: [('iojs', 'io.js'), ('meteor', 'meteor'), ('ruby', 'ruby'), ('WordPress', 'WordPress')],
+        6: [('chef', 'chef'), ('cocos2d', 'cocos2d-x'), ('diaspora', 'diaspora'), ('emberjs', 'ember.js'), ('resque', 'resque'), ('Shopify', 'active_merchant'), ('spotify', 'luigi'), ('TryGhost', 'Ghost')],
+        7: [('django', 'django'), ('joomla', 'joomla-cms'), ('scikit-learn', 'scikit-learn')],
+        9: [('JetBrains', 'intellij-community'), ('puppetlabs', 'puppet'), ('rails', 'rails')],
+        11: [('saltstack', 'salt'), ('Seldaek', 'monolog'), ('v8', 'v8')],
+        12: [('git', 'git'), ('webscalesql', 'webscalesql-5.6')],
+        13: [('fog', 'fog')],
+        14: [('odoo', 'odoo')]
     }
 
     if not os.path.isdir(raw_files_folder):
@@ -82,7 +84,7 @@ if __name__ == '__main__':
 
     for truck_factor in projects:
         for project in projects[truck_factor]:
-            name = project[1]
-            organization = project[0]
-            repository = GitHubRepository.Repository(organization, name, api_collector)
-            creator = SpreadsheetCreator(organization, name, repository)
+            project_name = project[1]
+            project_org = project[0]
+            project_collector = project_collector_api.Collector(project_org, project_name, api_scraper)
+            creator = DocumentationDownloader(project_org, project_name, project_collector)

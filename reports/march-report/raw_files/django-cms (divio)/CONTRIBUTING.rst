@@ -1,66 +1,61 @@
-##########################
-Contributing to django CMS
-##########################
+============
+CONTRIBUTING
+============
 
-Like every open-source project, django CMS always welcomes contributions.
-
-
-*******************************
-GitHub issues and pull requests
-*******************************
-
-`GitHub issues <https://github.com/divio/django-cms/issues>`_ should only be used to report *suspected issues* in
-django CMS.
-
-It should **not** be used for reporting *security issues* - please use `security@django-cms.org
-<security@django-cms.org>`_ for those.
-
-For *help with django CMS*, please use our `users' email list <https://groups.google.com/forum/#!forum/django-cms>`_.
-
-For *feature requests*, please use our `developers' email list
-<https://groups.google.com/forum/#!forum/django-cms-developers>`_.
+First, thank you very much, that you would like to contribute to django CMS.
+We always welcome contributions, like many other open-source projects. We are
+very thankful to the many `present, past and future contributors <https://github.com/divio/django-cms/graphs/contributors>`_.
 
 
-**************************
+Code of Conduct
+===============
+
+django CMS is governed by a `Code of Conduct
+<http://docs.django-cms.org/en/latest/contributing/code_of_conduct.html>`_.
+All participants in our community and its various forums are expected to abide by it.
+
+
+Issues and pull requests
+========================
+
+* Please report **any bugs** through `GitHub issues <https://github.com/divio/django-cms/issues>`_.
+* For *help with django CMS*, please use our `users' email list <https://groups.google.com/forum/#!forum/django-cms>`_
+  or `StackOverflow <https://stackoverflow.com/questions/tagged/django-cms>`_.
+* For *feature requests*, please use our
+  `developers' email list <https://groups.google.com/forum/#!forum/django-cms-developers>`_.
+* For *security issues* please see further below.
+
+
 Contribution documentation
-**************************
+==========================
 
-We maintain comprehensive `contribution documentation <http://docs.django-cms.org/en/latest/contributing/>`_ - please
-familiarise yourself with it.
+We maintain comprehensive `contribution documentation <http://docs.django-cms.org/en/latest/contributing/>`_.
+Please familiarise yourself with it before submitting any issues or pull requests.
 
 
-***************
 Security issues
-***************
+===============
 
-Security issues should not be reported **anywhere** except via our dedicated and private `security@django-cms.org
-<security@django-cms.org>`_ email address.
+Please have a look at our security policy for
+`how to deal with security issues <http://docs.django-cms.org/en/latest/contributing/development-policies.html#reporting-security-issues>`_.
 
 If you think you have discovered a security issue in our code, please do not raise it on
 
-* IRC
 * GitHub
+* StackOverflow
+* IRC
 * Twitter
 * either of our email lists
 
 or in any other public forum until we have had a chance to deal with it.
 
 
-***************
-Code of conduct
-***************
-
-django CMS is governed by a `Code of Conduct
-<http://docs.django-cms.org/en/latest/contributing/code_of_conduct.html>`_. All participants in our community and its
-various forums are expected to abide by it.
-
-
-*********
 Community
-*********
+=========
 
 You can join us online:
 
+* on `StackOverflow <https://stackoverflow.com/questions/tagged/django-cms>`_.
 * in our IRC channel, #django-cms, on ``irc.freenode.net``. If you don't have an IRC client, you can
   `join our IRC channel using the KiwiIRC web client
   <https://kiwiirc.com/client/irc.freenode.net/django-cms>`_, which works pretty well.
@@ -73,6 +68,4 @@ You can join us online:
 You can also follow:
 
 * the `Travis Continuous Integration build reports <https://travis-ci.org/divio/django-cms>`_
-* the `@djangocms`_ Twitter account for general announcements
-
-.. _@djangocms : https://twitter.com/djangocms
+* the `@djangocms <https://twitter.com/djangocms>`_ Twitter account for general announcements
